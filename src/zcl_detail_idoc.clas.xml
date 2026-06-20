@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_DETAIL_IDOC</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Custom Class for fetching IDoc Details</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>LS_E1ADRM1</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Central Address Segment Group, Main Segment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LS_E1EDK02</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc: Document header date segment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LS_E1EDL20</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delivery Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LS_E1EDL24</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delivery Item</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LS_E1EDL43</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc: Reference</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LS_E1EDP02</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc: Document Item Reference Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LS_E1EDP26</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc: Document Item Amount Segment</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

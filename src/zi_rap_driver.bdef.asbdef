@@ -1,0 +1,10 @@
+managed implementation in class zbp_i_rap_driver unique;
+
+define behavior for ZI_RAP_DRIVER //alias <alias_name>
+persistent table zrv_rap_driver
+lock master
+{
+  create;
+  update;
+  delete;
+}

@@ -1,0 +1,5 @@
+CLASS zbp_i_idoc_wfstatus DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_idoc_wfstatus.
+ENDCLASS.
+
+CLASS zbp_i_idoc_wfstatus IMPLEMENTATION.
+ENDCLASS.

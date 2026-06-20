@@ -1,0 +1,15 @@
+unmanaged implementation in class zbp_i_idoc_wf_bpa_log unique;
+strict ( 2 );
+
+define behavior for ZI_IDOC_WF_BPA_LOG alias WFLogTable
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) CreatedOn, CreatedAt, ChangedOn, ChangedAt;
+  field ( readonly : update  ) IdocNumber, WorkflowId;
+}

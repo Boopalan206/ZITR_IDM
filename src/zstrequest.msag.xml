@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZSTREQUEST</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message Class for TR Check</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>No records found for the given parameters</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Transport sequence duplicated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Error when trying to create Transport Control number</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Error when trying to save Transport Control</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Transport Control saved and released</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Change Request &amp; created.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Error when trying to create the change request</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Change Request &amp; does not exist in Change Request Control System</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Change Request not released yet. Action forbidden.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Change Request &amp; already released</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Reference field is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Module field is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Ticket number is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Short description field is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>Impact field is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>Impact field is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>The object &amp; is locked in change request &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>Company Code field is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Change Request &amp; deleted</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>Data saved</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Error when trying to save data</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Change Request already included in the list</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>Please, provide a documentarion for the Change Request</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Change Requests with no objects conflicts</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Project ID does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Company Code does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Error when trying to delete request from Z table. Deleted from E070.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>Data saved</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>Error when trying to insert request &amp; in Change Request Control System</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>Requests inserted sucessfully</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>Error when trying to delete request &amp; from Change Request Control System</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>Requests deleted sucessfully</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>Sequence for the requests is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>Module does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>Project ID is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>Creating request only through the transaction ZGECR</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>037</MSGNR>
+     <TEXT>User ID does not exist.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>038</MSGNR>
+     <TEXT>Ticket Number must start with D, I, P or R</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>Do not use character &amp; in this field</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>040</MSGNR>
+     <TEXT>When releasing a change request this field can&apos;t contain character &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>041</MSGNR>
+     <TEXT>Change Requests are allowed to be released on ZGECR Transaction only</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>042</MSGNR>
+     <TEXT>Change Request &amp; has invalid entries for the parameters table.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>043</MSGNR>
+     <TEXT>Request to Create a change request does not exist.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSTREQUEST</ARBGB>
+     <MSGNR>044</MSGNR>
+     <TEXT>Select a line.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,5 @@
+CLASS zbp_i_idoc_wf_bpa_log DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_idoc_wf_bpa_log.
+ENDCLASS.
+
+CLASS zbp_i_idoc_wf_bpa_log IMPLEMENTATION.
+ENDCLASS.

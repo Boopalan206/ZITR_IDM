@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Func.Grp for ITR Idoc Management Tool</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_ITR_IDMTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_ITR_IDM</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_GET_ALL_STATUSES</FUNCNAME>
+     <SHORT_TEXT>Func.Module for Getting all the status codes</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>LA_ZVAR_NAME_IDOC</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <TYP>ZTT_IDOC_MESTYP</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>LA_ZVAR_NAME_IDOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char255</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for IDOC Message Types</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_GET_DIST_MAILS</FUNCNAME>
+     <SHORT_TEXT>Func.Module for getting distribution mails</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_MES_TYPE</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DEPT_NAME</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <TYP>ZTT_IDOC_EMAIL_LIST</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_MES_TYPE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DEPT_NAME</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for IDOC Email list</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_GET_FILTER_VALUES</FUNCNAME>
+     <SHORT_TEXT>Function module for extracting filter values from BRF+</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTT_IDOC_FILTER_VALUES</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for BRF+ filter values</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_GET_MSG_TYPES</FUNCNAME>
+     <SHORT_TEXT>Func.Module for getting message types</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_INPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <TYP>ZTT_IDOC_MSG_TYPES</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_INPUT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for IDOC Msg Types</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_GET_STATUS_DESCRIPTION</FUNCNAME>
+     <SHORT_TEXT>Func.Grp for ITR Idoc Management Tool</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTT_IDOC_STATUS_DESC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ET_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for BRF+ Status description</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_ITR_F_IDOC_MASS_UPDATE</FUNCNAME>
+     <SHORT_TEXT>Function Module for Mass Update</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_NUM</PARAMETER>
+       <TYP>EDIDC-DOCNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_TYPE</PARAMETER>
+       <TYP>EDI_IAPI00-IDOCTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <TYP>EDILSEGTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <TYP>FIELDNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_MSG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>CANT_MODIFY_IDOC</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Basic type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Segment type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_MSG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CANT_MODIFY_IDOC</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_ITR_F_IDOC_SEGMENTS</FUNCNAME>
+     <SHORT_TEXT>IDOC Segment List</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <TYP>EDILSEGTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <TYP>FIELDNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEGNUM</PARAMETER>
+       <TYP>IDOCDSGNUM</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_IDOC_DATA</PARAMETER>
+       <TYP>EDIDD</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>GT_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Segment type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Number of SAP segment</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

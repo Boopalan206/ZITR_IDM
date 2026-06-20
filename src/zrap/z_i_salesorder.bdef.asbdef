@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_salesorder unique;
+strict ( 2 );
+
+define behavior for Z_I_SalesOrder //alias <alias_name>
+persistent table ZSO_HDR
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

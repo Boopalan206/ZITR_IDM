@@ -1,0 +1,3 @@
+FUNCTION-POOL ZMATERIAL_RESONANCE.          "MESSAGE-ID ..
+
+* INCLUDE LZMATERIAL_RESONANCED...           " Local class definition

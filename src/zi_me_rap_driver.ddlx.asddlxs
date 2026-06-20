@@ -1,0 +1,26 @@
+@Metadata.layer: #CORE
+@EndUserText.label: 'Driver'
+@UI: {
+headerInfo: { typeName: 'Driver Detail',
+              typeNamePlural: 'Drivers Detail',
+              title: { type: #STANDARD, label: 'Driver', value: 'driver_id' } }
+}
+annotate view ZI_RAP_DRIVER with
+{
+  @UI.facet: [{ id: 'Driver', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE, label: 'Driver', position: 10 }]
+
+  @UI: { lineItem: [{position: 10 }], identification: [{position: 10 }], selectionField: [{position: 10 }] }
+  driver_id;
+  @UI: { lineItem: [{position: 20 }], identification: [{position: 20 }] }
+  driver_fname;
+  @UI: { lineItem: [{position: 30 }], identification: [{position: 30 }] }
+  driver_lname;
+  @UI: { lineItem: [{position: 40 }], identification: [{position: 40 }] }
+  driver_nationality;
+  @UI: { lineItem: [{position: 50 }], identification: [{position: 50 }] }
+  driver_dob;
+  @UI: { lineItem: [{position: 60 }], identification: [{position: 60 }] }
+  driver_mob;
+
+
+}

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Material Create or Extend</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMATERIAL_RESONANCETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMATERIAL_RESONANCE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZMATERIAL_CREATE_EXTEND</FUNCNAME>
+     <SHORT_TEXT>Material Create or Extended</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>P_MATNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_VKORG</PARAMETER>
+       <DEFAULT>&apos;1000&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VKORG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_WERKS</PARAMETER>
+       <DEFAULT>&apos;1710&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>WERKS_D</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_VTWEG</PARAMETER>
+       <DEFAULT>&apos;10&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VTWEG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_MESTYP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-MESTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_STATUS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-STATUS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_WFSTAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-STATUS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_CREDAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-CREDAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_MAT_TYPE</PARAMETER>
+       <DEFAULT>&apos;FERT&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MARA-MTART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_IND_SECTOR</PARAMETER>
+       <DEFAULT>&apos;M&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MBRSH</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_ITEM_CAT</PARAMETER>
+       <DEFAULT>&apos;CBOR&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MTPOS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_MATL_DESC</PARAMETER>
+       <DEFAULT>&apos;TEST 123&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MAKTX</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_MATNR</PARAMETER>
+       <TYP>TYP_R_MATNR</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>I_VKORG</PARAMETER>
+       <TYP>SD_VKORG_RANGES</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>I_WERKS</PARAMETER>
+       <TYP>TYP_R_WERKS</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>I_VTWEG</PARAMETER>
+       <TYP>SHP_VTWEG_RANGE_T</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>E_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>P_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_WERKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_VTWEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Distribution Channel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_MESTYP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Status of IDoc</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_WFSTAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Status of IDoc</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_CREDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc Created On</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_MAT_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_IND_SECTOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Industry</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_ITEM_CAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item Category Group from Material Master</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_MATL_DESC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Description</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges Material</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_WERKS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges Plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_VTWEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Ranges Table for Distribution Channel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

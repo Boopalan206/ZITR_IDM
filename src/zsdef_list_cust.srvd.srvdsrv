@@ -1,0 +1,17 @@
+@EndUserText.label: 'SDEF for IDOC List Query'
+define service ZSDEF_LIST_CUST {
+  expose ZI_LIST_CUST;
+  expose ZI_IDOC_HEADER;
+  expose ZI_IDOC_ITEM;
+  expose ZI_IDOC_STATUS_CODES;
+  expose ZI_IDOC_MSG_TYPES;
+  expose ZI_IDOC_EMAIL_LIST;
+  expose ZI_IDOC_WF_STATUS;
+  expose ZI_IDOC_PROCESSING;
+  expose ZI_IDOC_MASS_EDIT_DETAILS;
+  expose ZI_IDOC_FILTER_LIST;
+  expose ZI_IDOC_WF_BPA_LOG;
+  expose ZITR_IDM_ORDERS_ANALYTICS;
+  expose ZITR_IDM_ANALYTICS;
+  expose ZITR_ANALYTICS_SUCCESS;
+}

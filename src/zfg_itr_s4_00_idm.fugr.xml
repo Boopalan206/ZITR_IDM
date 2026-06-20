@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Functional Group for IDM project</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_ITR_S4_00_IDMTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_ITR_S4_00_IDM</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_ITRS4_08_IDOC_PROCESSING</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Idoc Processing FM reference IDOC Processing Method</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>LS_PROCESSIDOC</PARAMETER>
+       <TYP>ZST_ITR_S4_08_IDOC_PROC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ER_ENTITY</PARAMETER>
+       <TYP>ZST_ITR_S4_08_IDOC_PROC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>LS_PROCESSIDOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDOC Processing input parameters</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ER_ENTITY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDOC Processing input parameters</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZITR_IDM_F_IDOC_MASS_UPDATE</FUNCNAME>
+     <SHORT_TEXT>Idoc Mass Update</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_NUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-DOCNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_TYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDI_IAPI00-IDOCTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDILSEGTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FIELDNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_MSG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Basic type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Segment type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_MSG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZITR_S4_07_IDM_F_IDOC_SEGMENTS</FUNCNAME>
+     <SHORT_TEXT>Idoc Segment List</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDILSEGTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FIELDNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_IDOC_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDD</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>GT_DATA</PARAMETER>
+       <TYP>ZTT_EDIDD</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Segment type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>TABLE TYPE FOR EDIDD</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZITR_S4_07_IDM_MASS_UPLOAD</FUNCNAME>
+     <SHORT_TEXT>IDOC Mass Upload Create Entity</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>LS_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZST_MASS_UPLOAD</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ER_ENTITY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZST_MASS_UPLOAD</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>LS_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>STRUCTURE FOR MASS UPLOAD</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ER_ENTITY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>STRUCTURE FOR MASS UPLOAD</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

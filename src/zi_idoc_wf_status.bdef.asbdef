@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_idoc_wf_status unique;
+strict ( 2 );
+
+define behavior for ZI_IDOC_WF_STATUS //alias <alias_name>
+persistent table ZTITR_WF_STATUS
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}
